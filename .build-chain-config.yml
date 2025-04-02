@@ -1,0 +1,11 @@
+version: "2.2"
+
+dependencies: |
+  LangBledsoe/hello-world-base:master
+  LangBledsoe/hello-world-dependent:master
+
+default:
+  build-command:
+    current: mvn clean install
+    upstream: mvn clean install
+    downstream: mvn clean install
