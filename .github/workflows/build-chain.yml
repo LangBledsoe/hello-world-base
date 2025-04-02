@@ -17,6 +17,6 @@ jobs:
         id: build-chain
         uses: kiegroup/github-action-build-chain@v3
         with:
-          definition-file: https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/master/.build-chain-config.yml
+          definition-file: https://raw.githubusercontent.com/LangBledsoe/hello-world-base/refs/heads/master/.build-chain-config.yml
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.LANGS_TOKEN }}
